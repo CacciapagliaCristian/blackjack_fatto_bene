@@ -1,0 +1,80 @@
+/* GENERAL SETTINGS ----------------------------------------------------------------------*/
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px;
+    height: 90vh;
+    padding: 5vh;
+    overflow: hidden;
+
+    /*BACKGROND COLOR*/
+    background: darkgreen;
+}
+header{
+    width: 850px;
+    background-color: white;
+}
+main{
+    width: 80vw;
+
+    text-align: center;
+    align-items: center;
+
+    overflow: hidden;
+    background: white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+footer{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background: beige;
+    text-align: center;
+
+    font-size: 10pt;
+}
+
+/*SINGOLI ELEMENTI HOME -------------------------------------------------------------------------------------*/
+
+.big{
+    width: 13vh;
+    height: 13vh;
+    transform: translateY(-1vh);
+}
+.font32{
+    font-size: 12vh;
+}
+.flexa{
+    display: flex;
+}
+.red{
+    color: red;
+}
+.black{
+    color: black;
+}
+.font_grande_piu_grande{
+    font-size: 14vh;
+    transform: translateY(-2vh);
+}
+ul{
+    list-style: none;
+}
+.dim_uguale{
+    width: 38vh;
+    height: 6vh;
+    margin: 2px;
+
+    font-size: 5vh;
+    font-weight: bolder;
+    display: flex;
+}
+.balance{
+    margin-left: 10px;
+}
