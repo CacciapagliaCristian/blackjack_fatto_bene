@@ -1,7 +1,7 @@
-// Definizione della variabile balance
+let mazzo;
+let mano;
 var balance = 0;
 
-// Funzione per passare alla nuova pagina includendo il valore di balance come parametro nell'URL
 function redirectToPage(pageUrl) {
     window.location.href = pageUrl + "?balance=" + encodeURIComponent(balance);
 }
@@ -26,4 +26,26 @@ function gioca() {
 
 function home() {
     redirectToPage("../html/Home.html");
+}
+function genera_mazzo(){
+    let i = 0;
+    for (i = 0; i < 48; i++)
+    {
+        mazzo[i] = ;  //random
+    }
+}
+function controllo(mano){
+    let conteggio = 0, i=0;
+    let ununo, dueuno, treuno, quattrouno;
+    let esci;
+
+    do {
+        conteggio = conteggio + mano[i];
+        if (mano[i] == 1 && ununo== false){
+            ununo = true;
+        }
+        else{
+            if (mano[i] == 1 && quattrouno == false && treuno == false)
+        }
+    }while(esci)
 }
