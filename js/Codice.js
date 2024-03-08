@@ -1,18 +1,29 @@
-function carica_denaro(){
-    window.location.href="../html/Carica_denaro.html";
-}
-function settings(){
-    window.location.href="../html/Settings.html";
+// Definizione della variabile balance
+var balance = 0;
 
+// Funzione per passare alla nuova pagina includendo il valore di balance come parametro nell'URL
+function redirectToPage(pageUrl) {
+    window.location.href = pageUrl + "?balance=" + encodeURIComponent(balance);
 }
-function gioca(){
-    window.location.href="../html/Campo_da_gioco.html";
 
+// Funzione per aggiornare il valore di balance
+function updateBalance(newBalance) {
+    balance = newBalance;
 }
-function home(){
-    window.location.href="../html/Home.html";
 
+// Chiamate alle funzioni con la nuova URL specificata
+function carica_denaro() {
+    redirectToPage("../html/Carica_denaro.html");
 }
-function vis_grafica(){
 
+function settings() {
+    redirectToPage("../html/Settings.html");
+}
+
+function gioca() {
+    redirectToPage("../html/Campo_da_gioco.html");
+}
+
+function home() {
+    redirectToPage("../html/Home.html");
 }

@@ -5,51 +5,56 @@ body {
     justify-content: space-between;
     align-items: center;
     margin: 0;
-    height: 90vh;
-    padding: 5vh;
+    height: 100vh;
+    padding: 0;
     overflow: hidden;
-    background-color: darkgreen; /* Combined background color */
+    background-color: darkgreen;
 }
 
+/* HEADER */
 header {
-    width: 850px;
-    background-color: white;
-}
-
-main {
-    width: 80vw;
-    text-align: center;
-    overflow: hidden;
-    background: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-}
-
-footer {
-    display: flex;
-    justify-content: space-between;
     width: 100%;
-    background: beige;
-    text-align: center;
-    font-size: 10pt;
+    background-color: white;
+    padding: 10px;
+    box-sizing: border-box;
+
 }
 
-/* SINGOLI ELEMENTI HOME */
+/* MAIN SECTION */
+main {
+    width: 80%;
+    max-width: 1000px;
+    margin: 20px 0;
+    text-align: center;
+    background-color:white;
+    padding: 20px;
+    box-sizing: border-box;
+}
 
+/* FOOTER */
+footer {
+    width: 100%;
+    background-color: white;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 14px;
+}
+
+/* HOME ELEMENTS */
 .big {
-    width: 13vh;
-    height: 13vh;
-    transform: translateY(-1vh);
+    width: 130px;
+    height: 130px;
+    transform: translateY(-10px);
 }
 
 .font32 {
-    font-size: 12vh;
+    font-size: 36px;
 }
 
 .flexa {
     display: flex;
+    align-items: center;
 }
 
 .red {
@@ -61,43 +66,46 @@ footer {
 }
 
 .font_grande_piu_grande {
-    font-size: 14vh;
-    transform: translateY(-2vh);
+    font-size: 16vh;
+    transform: translateY(-20px);
 }
 
+/* LIST */
 ul {
+    padding: 0;
+    margin: 0;
     list-style: none;
 }
 
+/* DIMENSIONS EQUAL */
 .dim_uguale {
-    width: 38vh;
-    height: 6vh;
+    width: 380px;
+    height: 60px;
     margin: 2px;
-    font-size: 5vh;
-    font-weight: bolder;
+    font-size: 28px;
+    font-weight: bold;
     display: flex;
+    align-items: center;
 }
 
 .balance {
     margin-left: 10px;
 }
 
+/* CHOICE AND CONTENT */
 .scelta,
 .content {
-    width: 20vw; /* Combined width */
+    width: 20%;
+    max-width: 200px;
 }
 
+/* TABLES */
 .table_not_table {
     display: flex;
     flex-direction: row;
 }
 
+/* HOME */
 .home {
-    float: left;
     display: block;
-}
-
-#main_set {
-    text-align: left;
-    align-items: flex-start;
 }

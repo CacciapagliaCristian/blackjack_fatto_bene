@@ -1,0 +1,109 @@
+/* GENERAL SETTINGS */
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    height: 100vh;
+    padding: 0;
+    overflow: hidden;
+    background-color: darkgreen;
+}
+
+/* HEADER */
+header {
+    width: 100%;
+    background-color: white;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+/* MAIN SECTION */
+main {
+    width: 90%; /* Riduzione della larghezza per adattarsi meglio ai telefoni */
+    margin: 20px 0;
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* FOOTER */
+footer {
+    width: 100%;
+    background-color: white;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 14px;
+}
+
+/* HOME ELEMENTS */
+.big {
+    width: 80px; /* Riduzione delle dimensioni per adattarsi meglio ai telefoni */
+    height: 80px; /* Riduzione delle dimensioni per adattarsi meglio ai telefoni */
+    transform: translateY(-5px); /* Riduzione della trasformazione */
+}
+
+.font32 {
+    font-size: 24px; /* Riduzione della dimensione del carattere */
+}
+
+.font_grande_piu_grande {
+    font-size: 10vh; /* Adattamento della dimensione del font */
+    transform: translateY(-10px); /* Riduzione della trasformazione */
+}
+
+/* LIST */
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+/* DIMENSIONS EQUAL */
+.dim_uguale {
+    width: 90%; /* Aumento della larghezza per adattarsi meglio ai telefoni */
+    height: 50px; /* Riduzione dell'altezza */
+    margin: 2px;
+    font-size: 18px; /* Adattamento della dimensione del font */
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+.balance {
+    margin-left: 10px;
+}
+
+/* CHOICE AND CONTENT */
+.scelta,
+.content {
+    width: 90%; /* Aumento della larghezza per adattarsi meglio ai telefoni */
+    max-width: 200px;
+}
+
+/* TABLES */
+.table_not_table {
+    display: flex;
+    flex-direction: row;
+}
+
+/* HOME */
+.home {
+    display: block;
+}
+
+/* Media Query per telefoni */
+@media only screen and (max-width: 600px) {
+    main {
+        width: 95%; /* Riduzione della larghezza per adattarsi meglio ai telefoni più piccoli */
+    }
+    .dim_uguale,
+    .scelta,
+    .content {
+        width: 95%; /* Riduzione della larghezza per adattarsi meglio ai telefoni più piccoli */
+        max-width: none; /* Rimozione della larghezza massima */
+    }
+}
